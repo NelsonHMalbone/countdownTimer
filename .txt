@@ -1,0 +1,2 @@
+some rough ideas for timers in such
+https://www.geeksforgeeks.org/create-countdown-timer-using-python-tkinter/
