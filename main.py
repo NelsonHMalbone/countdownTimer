@@ -2,6 +2,9 @@
 
 # first thing is to import the time module
 
+# Type Casting is the method to convert the Python
+# variable datatype into a certain data type in order to perform the required operation by users
+
 import time
 # this will let program sleep
 #time.sleep(5)
@@ -18,8 +21,13 @@ my_time = int(input("Enter a time is Secs: "))
 for x in range(my_time, 0, -1):
     # want to display a clock so now to calculate secs min and hours
     seconds = x % 60 # the % remidingless of 60
-    #minutes =
-    print(f"00:00:{seconds:02}")
+    # theres 60 secs in a minute
+    # will type cast using a int() then with the % 60
+    # this will keep it at a max of 60
+    minutes = int(x / 60) % 60
+    # there is 3600 secs in 1 hour
+    hours = int(x / 3600)
+    print(f"{hours:02}:{minutes:02}:{seconds:02}")
     time.sleep(1)
 
 print("Time is up")
